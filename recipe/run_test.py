@@ -18,7 +18,7 @@ subprocess.check_call([join(sys.prefix,
 
 armv7l = bool(platform.machine() == 'armv7l')
 ppc64le = bool(platform.machine() == 'ppc64le')
-debug = int(os.getenv('DEBUG', 0))
+debug = int(os.getenv('DEBUG', 1))
 
 print('Python version:', platform.python_version())
 assert platform.python_version() == '2.7.12'
