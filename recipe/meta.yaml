@@ -1,5 +1,5 @@
 package:
-  name: python
+  name: python-debug
   version: 3.5.2
 
 source:
@@ -23,8 +23,6 @@ build:
     - vc14              # [win]
   script_env:
     - python_branding
-  features:
-    - python_debug
 
 requirements:
   build:
@@ -35,7 +33,7 @@ requirements:
     - tk 8.5.*          # [unix]
     - xz 5.2.*          # [unix]
     - zlib 1.2.*        # [unix]
-    - ncurses 5.9*      # [linux]
+    - ncurses 5.9 9     # [linux]
   run:
     - openssl 1.0.*     # [unix]
     - readline 6.2*     # [unix]
@@ -43,7 +41,7 @@ requirements:
     - tk 8.5.*          # [unix]
     - xz 5.2.*          # [unix]
     - zlib 1.2.*        # [unix]
-    - ncurses 5.9*      # [linux]
+    - ncurses 5.9 9     # [linux]
     - vs2015_runtime    # [win]
 
 test:

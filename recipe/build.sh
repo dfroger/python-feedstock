@@ -14,7 +14,8 @@ if [ `uname` == Darwin ]; then
         --with-tcltk-includes="-I$PREFIX/include" \
         --with-tcltk-libs="-L$PREFIX/lib -ltcl8.5 -ltk8.5" \
         --with-pydebug \
-        --without-pymalloc
+        --without-pymalloc \
+        --with-valgrind
 fi
 if [ `uname` == Linux ]; then
     ./configure --enable-shared --enable-ipv6 --with-ensurepip=no \
@@ -22,7 +23,8 @@ if [ `uname` == Linux ]; then
         --with-tcltk-includes="-I$PREFIX/include" \
         --with-tcltk-libs="-L$PREFIX/lib -ltcl8.5 -ltk8.5" \
         --with-pydebug \
-        --without-pymalloc
+        --without-pymalloc \
+        --with-valgrind
         CPPFLAGS="-I$PREFIX/include" \
         LDFLAGS="-L$PREFIX/lib -Wl,-rpath=$PREFIX/lib,--no-as-needed"
 fi
