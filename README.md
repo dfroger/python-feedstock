@@ -1,5 +1,5 @@
-About python
-============
+About python-debug
+==================
 
 Home: http://www.python.org/
 
@@ -11,37 +11,25 @@ Summary: General purpose programming language
 
 
 
-Current build status
-====================
+Installing python-debug
+=======================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python/badges/version.svg)](https://anaconda.org/conda-forge/python)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python/badges/downloads.svg)](https://anaconda.org/conda-forge/python)
-
-Installing python
-=================
-
-Installing `python` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `python-debug` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `python` can be installed with:
+Once the `conda-forge` channel has been enabled, `python-debug` can be installed with:
 
 ```
-conda install python
+conda install python-debug
 ```
 
-It is possible to list all of the versions of `python` available on your platform with:
+It is possible to list all of the versions of `python-debug` available on your platform with:
 
 ```
-conda search python --channel conda-forge
+conda search python-debug --channel conda-forge
 ```
 
 
@@ -79,18 +67,30 @@ Terminology
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
 
+Current build status
+====================
 
-Updating python-feedstock
-=========================
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-feedstock/branch/master)
 
-If you would like to improve the python recipe or build a new
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-debug/badges/version.svg)](https://anaconda.org/conda-forge/python-debug)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-debug/badges/downloads.svg)](https://anaconda.org/conda-forge/python-debug)
+
+
+Updating python-debug-feedstock
+===============================
+
+If you would like to improve the python-debug recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/python-feedstock are
+Note that all branches in the conda-forge/python-debug-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
