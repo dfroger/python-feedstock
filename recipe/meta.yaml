@@ -2,7 +2,7 @@
 {% set sha256 = "3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6" %}
 
 package:
-  name: python
+  name: python-debug
   version: {{ version }}
 
 source:
@@ -33,14 +33,14 @@ requirements:
     - sqlite 3.13.*     # [unix]
     - tk 8.5.*          # [unix]
     - zlib 1.2.*        # [unix]
-    - ncurses 5.9*      # [linux]
+    - ncurses 5.9 9     # [linux]
   run:
     - openssl 1.0.*     # [unix]
     - readline 6.2*     # [unix]
     - sqlite 3.13.*     # [unix]
     - tk 8.5.*          # [unix]
     - zlib 1.2.*        # [unix]
-    - ncurses 5.9*      # [linux]
+    - ncurses 5.9 9     # [linux]
     - vs2008_runtime    # [win]
 
 test:

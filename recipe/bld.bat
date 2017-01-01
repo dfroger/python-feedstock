@@ -16,7 +16,7 @@ if "%ARCH%"=="64" (
 
 cd PCbuild
 dir
-call build.bat -e -p %PLATFORM%
+call build.bat -e -p %PLATFORM% -d
 if errorlevel 1 exit 1
 cd ..
 
