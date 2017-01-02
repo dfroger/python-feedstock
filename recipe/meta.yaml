@@ -2,7 +2,7 @@
 {% set sha256 = "3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6" %}
 
 package:
-  name: python-debug
+  name: python
   version: {{ version }}
 
 source:
@@ -22,6 +22,9 @@ build:
     - DLLs/_ctypes.pyd  # [win]
   track_features:
     - vc9               # [win]
+    - pydebug
+  features:
+    - pydebug
   script_env:
     - python_branding
 

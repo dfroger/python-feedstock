@@ -15,6 +15,7 @@ config=$(cat <<CONDARC
 channels:
  - conda-forge
  - defaults # As we need conda-build
+ - dfroger  # As we need pydebug
 
 conda-build:
  root-dir: /feedstock_root/build_artefacts
